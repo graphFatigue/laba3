@@ -1,0 +1,24 @@
+[
+  {
+    "$type": "Models.Square, Models",
+    "StartPoint": {
+      "X": 100.0,
+      "Y": 100.0
+    },
+    "Length": 200.0,
+    "Width": 200.0,
+    "Height": 0.0,
+    "Name": "Square"
+  },
+  {
+    "$type": "Models.Rectangle, Models",
+    "StartPoint": {
+      "X": 50.0,
+      "Y": 400.0
+    },
+    "Length": 400.0,
+    "Width": 500.0,
+    "Height": 0.0,
+    "Name": "Rectangle"
+  }
+]

@@ -1,0 +1,12 @@
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.Properties.Resources.resources
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.csproj.GenerateResource.cache
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Mary\source\repos\Laba3.1\Models\bin\Debug\Models.dll.config
+C:\Users\Mary\source\repos\Laba3.1\Models\bin\Debug\Models.dll
+C:\Users\Mary\source\repos\Laba3.1\Models\bin\Debug\Models.pdb
+C:\Users\Mary\source\repos\Laba3.1\Models\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mary\source\repos\Laba3.1\Models\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.dll
+C:\Users\Mary\source\repos\Laba3.1\Models\obj\Debug\Models.pdb
