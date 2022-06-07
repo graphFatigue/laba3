@@ -80,19 +80,7 @@ namespace Models
             return result;
         }
 
-        private int IntersectingArea()
-        {
-            int matches = 0;
-            for (int y = 0; y < Pic.Height; y++)
-            {
-                for (int x = 0; x < Pic.Width; x++)
-                {
-                    if (Pic.GetPixel(x, y) == Color.FromArgb(255, 255, 0, 0)) 
-                        matches++;
-                }
-            }
-            return matches;
-        }
+
 
         public double TotalPerim()
         {
@@ -133,18 +121,6 @@ namespace Models
             }
         }
 
-        public override string ToString()
-        {
-            string result = "";
-            //foreach (Figure f in _figures)
-            //{
-            //    // result += f.ToString() + "\n";
-            //}
-
-            result += "Intersecting area: " + this.IntersectingArea().ToString();
-
-            return result;
-        }
 
         public void Merge(Picture image)
         {
@@ -183,33 +159,5 @@ namespace Models
             return jsonTypeNameAuto;
         }
 
-
-        public void Open()
-        {
-            string path = AppDomain.CurrentDomain.BaseDirectory;
-            if (File.Exists(Path.Combine(path, "Image.json")))
-            {
-                string jsonTypeNameAuto;
-                using (StreamReader sw = new StreamReader(Path.Combine(path, "Image.json")))
-                {
-                    jsonTypeNameAuto = sw.ReadToEnd();
-                    sw.Close();
-                }
-
-                var settings = new JsonSerializerSettings
-                {
-                    TypeNameHandling = TypeNameHandling.Auto,
-                    NullValueHandling = NullValueHandling.Ignore,
-                    MissingMemberHandling = MissingMemberHandling.Ignore
-                };
-
-                _figures = JsonConvert.DeserializeObject<List<Figure>>(jsonTypeNameAuto, settings);
-
-                foreach (var figure in _figures)
-                {
-                    figure.MainForm = _mainform;
-                }
-            }
-        }
     }
 }

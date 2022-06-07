@@ -13,7 +13,7 @@ namespace Models
 
         public override void Draw(PaintEventArgs e)
         {
-            Pen myPen = new Pen(System.Drawing.Color.Red);
+            Pen myPen = new Pen(System.Drawing.Color.Green);
             Graphics formGraphics = MainForm.CreateGraphics();
 
             float X = (float)StartPoint.X;
@@ -35,7 +35,7 @@ namespace Models
 
         public override void FillFigure(Graphics gr)
         {
-            gr.FillRectangle(Brushes.Red, (float)StartPoint.X, (float)StartPoint.Y, Width, Length);
+            gr.FillRectangle(Brushes.Green, (float)StartPoint.X, (float)StartPoint.Y, Width, Length);
         }
     }
 }

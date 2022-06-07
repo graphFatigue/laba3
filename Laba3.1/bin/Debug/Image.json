@@ -16,9 +16,20 @@
       "X": 50.0,
       "Y": 400.0
     },
-    "Length": 400.0,
-    "Width": 500.0,
+    "Length": 200.0,
+    "Width": 300.0,
     "Height": 0.0,
     "Name": "Rectangle"
+  },
+  {
+    "$type": "Models.ShadedRectangle, Models",
+    "StartPoint": {
+      "X": 400.0,
+      "Y": 150.0
+    },
+    "Length": 100.0,
+    "Width": 300.0,
+    "Height": 0.0,
+    "Name": "ShadedRectangle"
   }
 ]

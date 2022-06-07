@@ -14,3 +14,4 @@ C:\Users\Mary\source\repos\Laba3.1\Laba3.1\bin\Debug\Models.pdb
 C:\Users\Mary\source\repos\Laba3.1\Laba3.1\bin\Debug\Models.dll.config
 C:\Users\Mary\source\repos\Laba3.1\Laba3.1\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Mary\source\repos\Laba3.1\Laba3.1\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Mary\source\repos\Laba3.1\Laba3.1\obj\Debug\Laba3._1.Form1.resources
