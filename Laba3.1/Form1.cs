@@ -48,7 +48,7 @@ namespace Laba3._1
             // f5.ChangeSize(2);
             // f5.MoveFigure(300, 100);
             //_image.ChangeSize(0.5);
-            _image.MoveFigures(-200, 100);
+            //_image.MoveFigures(-200, 100);
              _image.Merge(img);
         }
 
@@ -83,14 +83,7 @@ namespace Laba3._1
             button2.Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)//підрахунок загальної площі, займаної фігурами (не просто сума, а ще облік загальних площ, їх потрібно додавати звичайно тільки один раз)
-        {
-            if (_image != null)
-            {
-                this.txtFigure.Text += " Occupied area: " + _image.OccupiedArea();
-            }
-            button3.Visible = false;
-        }
+      
 
     }
 }
