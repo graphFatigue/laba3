@@ -141,20 +141,6 @@ namespace Models
         }
 
 
-        public int OccupiedArea()
-        {
-            int matches = 0;
-            for (int y = 0; y < Pic.Height; y++)
-            {
-                for (int x = 0; x < Pic.Width; x++)
-                {
-                    if (Pic.GetPixel(x, y) == Color.FromArgb(255, 0, 128, 0))
-                        matches++;
-                }
-            }
-            return matches;
-        }
-
         public string Save()//зберігають і завантажують зображення з файлу
         {
             string jsonTypeNameAuto = JsonConvert.SerializeObject(_figures, Formatting.Indented, new JsonSerializerSettings
