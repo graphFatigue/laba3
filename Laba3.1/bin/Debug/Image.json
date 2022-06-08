@@ -1,35 +1,57 @@
 [
   {
-    "$type": "Models.Square, Models",
+    "$type": "Models.Cube, Models",
     "StartPoint": {
       "X": 100.0,
-      "Y": 100.0
+      "Y": 300.0
     },
     "Length": 200.0,
     "Width": 200.0,
-    "Height": 0.0,
-    "Name": "Square"
+    "Height": 82.84271,
+    "Name": "Cube"
   },
   {
-    "$type": "Models.Rectangle, Models",
+    "$type": "Models.Pyramid, Models",
     "StartPoint": {
-      "X": 50.0,
-      "Y": 400.0
+      "X": 20.0,
+      "Y": 50.0
     },
     "Length": 200.0,
     "Width": 300.0,
-    "Height": 0.0,
-    "Name": "Rectangle"
+    "Height": 200.0,
+    "Name": "Pyramid"
   },
   {
     "$type": "Models.ShadedRectangle, Models",
     "StartPoint": {
-      "X": 400.0,
+      "X": 250.0,
       "Y": 150.0
     },
-    "Length": 100.0,
-    "Width": 300.0,
+    "Length": 300.0,
+    "Width": 100.0,
     "Height": 0.0,
     "Name": "ShadedRectangle"
+  },
+  {
+    "$type": "Models.Parallelepiped, Models",
+    "StartPoint": {
+      "X": 500.0,
+      "Y": 400.0
+    },
+    "Length": 100.0,
+    "Width": 150.0,
+    "Height": 150.0,
+    "Name": "Parallelepiped"
+  },
+  {
+    "$type": "Models.Cube, Models",
+    "StartPoint": {
+      "X": 650.0,
+      "Y": 200.0
+    },
+    "Length": 100.0,
+    "Width": 100.0,
+    "Height": 41.4213562,
+    "Name": "Cube"
   }
 ]

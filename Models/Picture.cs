@@ -69,6 +69,8 @@ namespace Models
             _figures.Clear();
         }
 
+
+        //повертають сумарну площу фігур, сумарний периметр; 
         public double TotalArea()
         {
             double result = 0.0;
@@ -79,8 +81,6 @@ namespace Models
 
             return result;
         }
-
-
 
         public double TotalPerim()
         {
@@ -93,7 +93,8 @@ namespace Models
             return result;
         }
 
-        public void MoveFigures(double i, double j)
+
+        public void MoveFigures(double i, double j)//пересуває зображення
         {
             foreach (Figure f in _figures)
             {
@@ -102,7 +103,7 @@ namespace Models
             }
         }
 
-        public void ChangeSize(double k)
+        public void ChangeSize(double k)//встановлює масштаб зображення (що змінює його розмір разом з фігурами зі збереженням пропорцій); 
         {
             foreach (Figure f in _figures)
             {
@@ -122,7 +123,7 @@ namespace Models
         }
 
 
-        public void Merge(Picture image)
+        public void Merge(Picture image)//об'єднує два зображення
         {
             foreach (Figure f in image.Figures)
             {
@@ -131,7 +132,7 @@ namespace Models
             image.Figures.Clear();
         }
 
-        public void Draw(PaintEventArgs e)
+        public void Draw(PaintEventArgs e)//малює все фігури в консолі або на формі
         {
             foreach (Figure f in Figures)
             {
@@ -139,7 +140,22 @@ namespace Models
             }
         }
 
-        public string Save()
+
+        public int OccupiedArea()
+        {
+            int matches = 0;
+            for (int y = 0; y < Pic.Height; y++)
+            {
+                for (int x = 0; x < Pic.Width; x++)
+                {
+                    if (Pic.GetPixel(x, y) == Color.FromArgb(255, 0, 128, 0))
+                        matches++;
+                }
+            }
+            return matches;
+        }
+
+        public string Save()//зберігають і завантажують зображення з файлу
         {
             string jsonTypeNameAuto = JsonConvert.SerializeObject(_figures, Formatting.Indented, new JsonSerializerSettings
             {
